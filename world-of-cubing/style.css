@@ -1,0 +1,243 @@
+body{
+    /* background: url(background2.png); */
+    margin: 0;
+    font-family: Comfortaa, sans-serif; 
+    background: linear-gradient(to bottom,rgba(0,0,0,.73) 14.58%,rgba(114,1,42,.54) 29.69%,rgba(0,0,0,.7) 57.29%,#000 88.02%);
+scroll-behavior: smooth;
+}
+
+.carousel-caption{
+    background-color:rgba(0, 0,0,0.5)
+}
+.nav-fon{
+    background-color:rgba(0, 0, 0, 0.267)
+}
+.p{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.473);
+    padding-left: 15px;
+}
+.buttonn{
+   
+        background: rgb(22, 19, 17);
+        width: 900px;
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 800;
+        padding: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 20px rgb(255 115 0);
+        margin-bottom: 15px;
+}
+
+.search-box{
+    display: flex;
+    justify-content: end;
+    background-color: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 10px;
+    border-radius: 50%;
+    padding-top: 10px;
+    background-color: #2f3640;
+}
+
+.search-txt{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .4s ;
+    line-height: 40px;
+    width: 0;
+}
+.search-box:hover .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+/* input [type="checkbox"]
+{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+.check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 2opx;
+    background: #092c3e;
+    cursor: pointer;
+    border-radius:20px ;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+} */
+/* .carousel-item{
+    height: 600px;
+
+} */
+@media only screen and (min-width: 992px) {
+    .carousel-item{
+    height:600px;
+    }
+    .carousel{
+        height: 600px;
+    }
+   }
+  
+  .header{
+      background-image: url(lasthd.jpg);
+      
+      height: 500px;
+      background-size: contain;
+  }
+  .btn a{
+    display: block;
+    margin: 50px auto;
+    width:250px ;
+    height:54px ;
+    line-height: 54px;
+    background: #ff4655;
+    text-align: center;
+    color: #ececec;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .4s linear;
+    text-decoration: none;
+}
+.btn a:hover{
+    background-color: #0f1923;
+}
+.lastp{
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+}
+.lastcol{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+     flex-direction:column;
+}
+.confl1{
+    background: linear-gradient(45deg,#aa4b6b,#6b6b83,#3b8d99);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+    0%{
+background-position: 0 50%;
+    }
+    50%{
+background-position: 100%;
+    }
+    100%{
+background-position: 0 50%;
+    }
+}
+@media only screen and (min-width:768px) {
+    .myimgp >img{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+}
+.confl2{
+    background: linear-gradient(45deg,#c31432,#240b36);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+    0%{
+background-position: 0 50%;
+    }
+    50%{
+background-position: 100%;
+    }
+    100%{
+background-position: 0 50%;
+    }
+}
+@media only screen and (max-width:575px) {
+    .myimgp >img{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+}
+.confl3{
+    background: linear-gradient(45deg,#f12711,#f5af19);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+    0%{
+background-position: 0 50%;
+    }
+    50%{
+background-position: 100%;
+    }
+    100%{
+background-position: 0 50%;
+    }
+}
+.confl4{
+    background: linear-gradient(45deg,#dd3e54,#6be585);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+    0%{
+background-position: 0 50%;
+    }
+    50%{
+background-position: 100%;
+    }
+    100%{
+background-position: 0 50%;
+    }
+}
+.confl5{
+    background: linear-gradient(45deg,#009FFF,#ec2F4B);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+    0%{
+background-position: 0 50%;
+    }
+    50%{
+background-position: 100%;
+    }
+    100%{
+background-position: 0 50%;
+    }
+}
+.nav-link{
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+.navbar{
+    padding: 5px;
+   
+}
+.nav-item{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.feliksp{
+    padding-top: 40px;
+}
+
+
