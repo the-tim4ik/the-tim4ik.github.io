@@ -239,5 +239,20 @@ background-position: 0 50%;
 .feliksp{
     padding-top: 40px;
 }
+.fa-facebook , .fa-instagram{
+    font-size: 50px;
+    padding-left: 15px;
+}
+.fab{
+    color: gray;
+}
+.fa-facebook:hover{
+    color: blue;
+    transition: .4s linear;
+   }
+.fa-instagram:hover{
+       color:orangered
+   }
+    
 
 
