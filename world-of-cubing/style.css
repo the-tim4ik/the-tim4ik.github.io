@@ -284,9 +284,30 @@ background-position: 100%;
 background-position: 0 50%;
     }
 }
+
 tr:hover{
     background-color: white;
     color: rgb(10, 170, 10);
     box-shadow: 2px 2px 5px rgb(0, 195, 255) ;
     transition: .4s linear;
+}
+.conflprt{
+    background: linear-gradient(45deg,#1D2B64,#F8CDDA);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+    0%{
+background-position: 0 50%;
+    }
+    50%{
+background-position: 100%;
+    }
+    100%{
+background-position: 0 50%;
+    }
+}
+768
+.h2{
+    background-color: rgba(255, 255, 255, 0.459);
 }
