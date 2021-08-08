@@ -308,3 +308,21 @@ background-position: 100%;
 background-position: 0 50%;
     }
 }
+.btnuk a{
+    display: block;
+    margin: 50px auto;
+    width:250px ;
+    height:54px ;
+    line-height: 54px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .4s linear;
+    text-decoration: none;
+}
+.btnuk a:hover{
+    background-color: rgb(17, 0, 255);
+    color: rgb(255, 255, 255);
+}
