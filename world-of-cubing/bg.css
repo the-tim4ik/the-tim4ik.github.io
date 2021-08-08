@@ -35,7 +35,7 @@ a{
     transition: .4s linear;
 }
 .content a:hover{
-background: #0f1923;
+background: rgb(137, 189, 59);
 }
 img{
     width: 50%;
