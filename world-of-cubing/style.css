@@ -116,7 +116,8 @@ scroll-behavior: smooth;
     text-decoration: none;
 }
 .btn a:hover{
-    background-color: #0f1923;
+    background-color: white;
+    color: black;
 }
 .lastp{
     background-color: rgba(0, 0, 0, 0.308);
@@ -306,8 +307,4 @@ background-position: 100%;
     100%{
 background-position: 0 50%;
     }
-}
-768
-.h2{
-    background-color: rgba(255, 255, 255, 0.459);
 }
