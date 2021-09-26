@@ -1,7 +1,5 @@
 body{
-    text-align: center;
-    justify-content: center;
-    padding: 200px;
+  padding-top: 200px;
     background: url(unnamed.jpg);
     
 }
@@ -61,4 +59,8 @@ input{
 .p-13{
     font-size: 25px;
     color: white;
+}
+p{
+    text-align: center;
+    padding-top: 10px;
 }
