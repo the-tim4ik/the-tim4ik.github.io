@@ -6,6 +6,6 @@ let btn20 = document.querySelector('.btn-20');
 let p20 = document.querySelector('.p-20');
 
 function task (){
-p20.innerHTML = "Шановний(а) " +inp20.value +" " +inp21.value +"," +"ваш вік " +inp22.value +"роки(ів), " +"за родом діяльності ви " +inp23.value;
+p20.innerHTML = "Шановний(а) " +inp20.value +" " +inp21.value +"," +"ваш вік " +inp22.value +" " +"роки(ів), " +"за родом діяльності ви " +inp23.value;
 }
 btn20.onclick = task;
