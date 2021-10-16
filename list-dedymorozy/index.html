@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лист деду</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 align="center">Новогодний тест! :)</h1>
+        <div style="border-bottom: 3px dashed black; padding-top: 20px; padding-bottom: 10px; text-align: center;">
+            <h2>Как тебя зовут?</h2>
+            <input class="inp-1" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Сколько тебе лет?</h2>
+            <input class="inp-2" min="1" type="number">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Во сколько ты ложишся спать?</h2>
+            <input class="inp-3" type="text"> <br>
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Какой предмет не нравится твоему папе?</h2>
+            <input class="inp-4" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Как зовут твою маму?</h2>
+            <input class="inp-5" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>У тебя есть домашнее животное?</h2>
+            <h4>(да или нет)</h4>
+            <input class="inp-6" list="list">
+            <datalist id="list">
+                <option value="да">
+                <option value="нет">
+            </datalist>
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Назови тупую кличку</h2>
+            <input class="inp-7" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Что любят собаки?</h2>
+            <input class="inp-8" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Продолжи предложенее:</h2>
+            <h4>"Я не хотел бы жить в ..."</h4>
+            <input class="inp-9" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Что тебе не нравится??</h2>
+            <input class="inp-10" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Скажи любую фразу</h2>
+            <input class="inp-11" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Как бы ты назвал друга,который обидел тебя?</h2>
+            <input class="inp-12" type="text">
+        </div>
+        <div style="border-bottom: 3px dashed black; padding-bottom: 10px; text-align: center;">
+            <h2>Как тебя называет учительница?</h2>
+            <input class="inp-13" type="text">
+        </div>
+        <div style="margin-bottom: 30px;">
+            <h2 align="center">Твой лист:</h2>
+            <p align="center"><button class="btn-final">Получить</button></p>
+            <!-- <p class="p-error"></p> -->
+            <div style="border: 3px dashed black;">
+                <p class="p-1"></p>
+                <p class="p-2"></p>
+                <p class="p-3"></p>
+            </div>
+        </div>
+        <div align="center" style="margin-bottom: 10px;">
+            <label for="">Новогодний юмористический тест. Письмо Деду морозу. <br> by TiM4iK</label>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

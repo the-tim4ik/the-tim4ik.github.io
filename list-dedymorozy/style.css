@@ -1,0 +1,18 @@
+body{
+    margin: 0 15% 0 15%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1 , h2{
+    color: rgb(226, 93, 44);
+}
+p{
+    font-size: 22px;
+    line-height: 1;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.p-error{
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}
