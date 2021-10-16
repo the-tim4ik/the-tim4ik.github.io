@@ -24,7 +24,7 @@ let p3 = document.querySelector('.p-3');
 // }
 // btnfinal2.onclick = error;
 function list(){
-    p1.innerHTML = `Привет Дедушка мороз,меня зовут ${inp1.value} и мне ${inp2.value} лет. Сейчас ${inp3.value} и я пишу это письмо. У меня нет друзей, а еще меня обижают дома.`;
+    p1.innerHTML = `Привет Дедушка мороз,меня зовут ${inp1.value} и мне ${inp2.value} лет. Сейчас ${inp3.value} часов и я пишу это письмо. У меня нет друзей, а еще меня обижают дома.`;
     if (inp6.value == "да") {
         p2.innerHTML = `У меня есть питомец, его зовут ${inp7.value}.`;
     }
