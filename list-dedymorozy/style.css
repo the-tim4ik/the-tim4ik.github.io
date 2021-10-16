@@ -1,6 +1,9 @@
 body{
     margin: 0 15% 0 15%;
     font-family: 'Roboto Condensed', sans-serif;
+    background: url(bg.jpg);
+    background-size:cover ;
+    height: 50px;
 }
 h1 , h2{
     color: rgb(226, 93, 44);
