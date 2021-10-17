@@ -25,10 +25,10 @@ let p3 = document.querySelector('.p-3');
 // btnfinal2.onclick = error;
 function list() {
     p1.innerHTML = `Привет Дедушка мороз,меня зовут ${inp1.value} и мне ${inp2.value} лет. Сейчас ${inp3.value} часов и я пишу это письмо. У меня нет друзей, а еще меня обижают дома.`;
-    if (inp6.value == "да" || "Да") {
+    if (inp6.value == "да" || inp6.value == "Да") {
         p2.innerHTML = `У меня есть питомец, его зовут ${inp7.value}. Он единственный с кем я могу поиграть`;
     }
-    else if (inp6.value == "нет" || "Нет") {
+    else if (inp6.value == "нет" || inp6.value == "Нет") {
         p2.innerHTML = `У меня нет домашнего питомца,поэтому мне не с кем играть.`;
     }
     else {
