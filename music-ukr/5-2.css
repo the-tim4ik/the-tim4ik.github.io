@@ -15,7 +15,9 @@ body{
     flex-wrap: wrap;
 }
 .first , .second{
-    margin: 30px;
+   margin: 30px;
+    margin-right: 10px;
+    left: 0;
 }
 .text{
     padding-top: 50px;
