@@ -14,9 +14,6 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.first{
-    padding-left:10% ;
-}
 .text{
     padding-top: 50px;
     width: 50%;
