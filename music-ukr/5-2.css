@@ -1,0 +1,170 @@
+body{
+    scroll-behavior: smooth;
+}
+.container{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    justify-content: start;
+    display: flex;
+    margin-top: 40px;
+    padding-left: 50px;
+}
+.position{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first{
+    padding-left:10% ;
+}
+.text{
+    padding-top: 50px;
+    width: 50%;
+}
+.button{
+    width: 200px;
+    text-align: center;
+    background-color: rgb(255, 115, 0);
+    border: 0;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: 900;
+    box-shadow: 0 2px 20px  rgb(255, 115, 0);
+    margin-top: 10px;
+
+}
+.button:hover{
+    box-shadow: 0 2px 10px  black; 
+}
+.button:active{
+    box-shadow: 0 2px 20px rgb(255, 115, 0);
+    text-decoration: underline;
+}
+.foto, .text {
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box; 
+}
+.text-m{
+    font-size: 14px;
+    justify-content: center;
+}
+.foto{
+    margin-top: 20px;
+}
+.second>h2{
+
+    text-align: center;
+}
+.audio-show{
+    display: none;
+}
+.third{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: url(background.png);
+    border-top: 4px solid rgb(255, 115, 0);
+    border-bottom: 4px solid rgb(255, 115, 0);
+    margin-bottom: 10px;
+}
+.dark .third{
+    background: url(fonb.jpg);
+    background-size: cover;
+}
+.dark .button:hover{
+    box-shadow: 0 2px 10px  rgb(255, 255, 255); 
+}
+.dark .button:active{
+    box-shadow: 0 2px 20px rgb(255, 115, 0);
+    text-decoration: underline;
+}
+.dark{
+    background-color: black;
+    color: white; 
+}
+body{
+   transition: .6s; 
+}
+.black{
+    display: none;
+}
+.txt-black{
+    color: white;
+}
+.dark .btn-toggle{
+    background-color: white;
+    color: black;
+}
+.d-hide{
+    background-color: rgb(48, 47, 47);
+    width: 0;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    visibility: hidden;
+    transition: .8s;
+}
+.d-hide ul{
+    padding-left: 40px;
+    transition: .9s;
+}
+.btn-toggle{
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+    padding:15px ;
+    border: none;
+    font-size: 19px;
+    background-color: black;
+    color: white;
+}
+.btn-toggle-p{
+    position: fixed;
+}
+.p-padding{
+    padding-top: 17px;
+}
+.d-show{
+    width: 300px;
+    visibility: visible;
+}
+.btn-move{
+    transform: translateX(180px);
+    transition: 1.2s;
+    background-color: white;
+    color: black;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+   list-style-type: none;
+   text-align: center;
+   font-size: 20px;
+    margin: 20px 3px;
+    padding: 10px;
+    color: black;
+    background-color: rgb(252, 252, 252);
+    width: 200px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.d-hide li{
+    opacity: 0;
+    transition: 0.5s;
+}
+ .d-show li{
+    opacity: 1;
+    transition: 1.4s;
+}
