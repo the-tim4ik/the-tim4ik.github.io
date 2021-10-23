@@ -46,7 +46,7 @@ body{
     text-decoration: underline;
 }
 .foto, .text {
-    flex-basis: 320px;
+    flex-basis: 290px;
     flex-grow: 1;
     flex-shrink: 0;
     box-sizing: border-box; 
