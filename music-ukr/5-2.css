@@ -137,7 +137,7 @@ body{
     visibility: visible;
 }
 .btn-move{
-    transform: translateX(180px);
+    transform: translateX(190px);
     transition: 1.2s;
     background-color: white;
     color: black;
