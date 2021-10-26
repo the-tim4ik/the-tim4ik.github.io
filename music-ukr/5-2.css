@@ -8,7 +8,7 @@ body{
     justify-content: start;
     display: flex;
     margin-top: 40px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .position{
     display: flex;
@@ -16,6 +16,7 @@ body{
 }
 .first , .second{
    margin: 30px;
+   margin-top: -10px;
    padding-left: 6px;
     
 }
@@ -52,7 +53,6 @@ body{
 }
 .text-m{
     font-size: 14px;
-    justify-content: center;
 }
 .foto{
     margin-top: 20px;
@@ -107,6 +107,7 @@ body{
     padding-top: 100px;
     visibility: hidden;
     transition: .8s;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 .d-hide ul{
     padding-left: 40px;
@@ -133,7 +134,7 @@ body{
     visibility: visible;
 }
 .btn-move{
-    transform: translateX(190px);
+    transform: translateX(210px);
     transition: 1.2s;
     background-color: white;
     color: black;
