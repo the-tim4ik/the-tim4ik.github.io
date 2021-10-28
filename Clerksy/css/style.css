@@ -1,5 +1,5 @@
 body{
-    font-family: 'Kalam', cursive;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
 }
 .menu{
@@ -107,7 +107,7 @@ a:hover{
     padding-right: 30px;
 }
 .first__block{
-    margin-top: 73px;
+    margin-top: 70px;
     background-color: rgb(2, 61, 2);
     color: white;
 }
@@ -274,6 +274,25 @@ a:hover{
 }
 .bye__image{
     padding: 0 0 0 20px;
+}
+@media (max-width:432px) {
+    .bye__image__media{
+        width: 15%;
+    }
+}
+@media (max-width:403px) {
+    .bye__image__media{
+        width: 13%;
+    }
+}
+@media (max-width:381px) {
+    .bye__img{
+        display: flex;
+        justify-content: center;
+    }
+    .bye__image{
+        padding: 0 0 0 10px;
+    }
 }
 .book__block{
     padding:15px 15px 15px 0;
