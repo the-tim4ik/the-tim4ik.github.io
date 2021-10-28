@@ -319,3 +319,8 @@ a:hover{
 .book__text{
     font-size: 30px;
 }
+@media (max-width:380px) {
+    .book__title{
+        font-size: 40px;
+    }
+}
