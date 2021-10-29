@@ -351,3 +351,123 @@ a:hover{
         font-size: 40px;
     }
 }
+.book__download{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.book__btn{
+    border-radius: 10rem;
+    padding: 15px;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    transition: .4s;
+}
+.book__btn:hover{
+    background-color: rgb(22, 150, 22);
+}
+.register__block{
+    background: #F2EFE6;
+}
+.register__container{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 70px;
+}
+.register__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media (max-width:905px) {
+    .register__body{
+        text-align: center;
+    }
+}
+.register__info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 20px;
+}
+.register__info input{
+    border: none;
+    padding: 15px;
+    border-radius: 10rem;
+    width: 400px;
+}
+.register__input{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:450px) {
+    .register__info input{
+        width: 200px;
+    }
+    .register__container{
+        max-width: none;
+        padding: 70px 30px;
+    }
+    .register__input{
+        width: 400px;
+    }
+}
+@media (max-width:400px) {
+    .register__input{
+        padding-left: 20px;
+        width: 300px;
+    }
+}
+.register__btn{
+    border-radius: 10rem;
+    padding: 15px;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    transition: .4s;
+}
+@media (max-width:656px) {
+    .register__sing{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+.register__btn:hover{
+    background-color: rgb(22, 150, 22);
+}
+.white__block{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: -30px;
+}
+.white__row{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:500px) {
+    .white__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.white__row__two{
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #F2EFE6;;
+}
+@media (max-width:353px) {
+    .white__title{
+        font-size: 25px;
+    }
+    .white__text{
+        font-size: 14px;
+    }
+    .white__block{
+        max-width: none;
+        padding: 50px 20px;
+    }
+}
