@@ -366,6 +366,73 @@ a:hover{
 .book__btn:hover{
     background-color: rgb(22, 150, 22);
 }
+.cart__block{
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 50px;
+}
+@media (max-width:700px) {
+    .cart__block{
+        max-width: none;
+        padding: 50px 0;
+    }
+}
+.cart__row{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+@media (max-width:920px) {
+    .cart__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.cart__body{
+    text-align: center;
+}
+.cart__title{
+    font-size: 30px;
+}
+@media (max-width:1300px) {
+    .cart__title{
+        font-size: 22px;
+    }
+}
+.cart__col{
+    box-shadow: 5px 5px 20px -5px #e9e4d5;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 0 20px 20px;
+}
+@media (max-width:1180px) {
+    .cart__col{
+        padding: 50px 30px;
+    }
+}
+@media (max-width:1040px) {
+    .cart__col{
+        padding: 50px 10px;
+    }
+}
+@media (max-width:920px) {
+    .cart__col{
+        padding: 50px;
+    }
+}
+@media (max-width:420px) {
+    .cart__col{
+        padding: 50px 20px;
+    }
+}
+.opasity{
+    opacity: 0;
+}
+.cart__ul{
+    margin-left: 10px;
+    padding-left: 10px;
+}
 .register__block{
     background: #F2EFE6;
 }
