@@ -8,9 +8,9 @@ btnHide.onclick = function () {
     divStyle.classList.toggle('menu__hide__style__bg');
 }
 let divClick = document.querySelector('.menu__click');
-// divClick.onclick = function () {
-//     div.classList.remove('menu__show');
-//     btnHide.classList.remove('menu__btn__move');
-//     btnHide.classList.remove('fa-times');
-//     divStyle.classList.remove('menu__hide__style__bg');
-// }
+divClick.onclick = function () {
+    div.classList.remove('menu__show');
+    btnHide.classList.remove('menu__btn__move');
+    btnHide.classList.remove('fa-times');
+    divStyle.classList.remove('menu__hide__style__bg');
+}
