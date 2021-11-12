@@ -39,12 +39,18 @@ body{
 .menu__image{
     margin-bottom: -3px;
 }
-@media (min-width:620px) {
+.body__js{
+    overflow-y: hidden;
+}
+@media (min-width:618px) {
     .menu__burger{
         display: none;
     }
+    .body__js{
+        overflow-y: scroll;
+    }
 }
-@media (max-width:620px) {
+@media (max-width:618px) {
     .menu__row{
         display: none;
     }
@@ -237,6 +243,9 @@ body{
     }
     .second__col__px{
         margin-top: 20px;
+    }
+    .second__img__button{
+        margin-bottom: 15px;
     }
 }
 
