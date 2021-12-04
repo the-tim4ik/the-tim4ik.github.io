@@ -34,11 +34,19 @@ let timer = setInterval(next, 5000);
 let timer2;
 let timer3;
 function slider() {
+    if (slider.isRun) {
+        return false;
+    }
+    slider.isRun = true;
     clearInterval(timer);
     timer2 = setInterval(next, 10000);
 }
 btn__next.addEventListener("click", slider);
 function slider2() {
+    if (slider2.isRun) {
+        return false;
+    }
+    slider2.isRun = true;
     clearInterval(timer2);
     timer3 = setInterval(next, 10000);
 }
