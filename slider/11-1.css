@@ -39,8 +39,6 @@ body{
     font-size: 60px;
     transition: .8s ease;
     user-select: none;
-    background: none;
-    border: none;
     color: rgba(255, 255, 255, 0.445);
 }
 
