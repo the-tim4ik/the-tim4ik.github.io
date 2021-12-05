@@ -87,6 +87,7 @@ body{
 }
 .menu__burger__ul{
     list-style: none;
+    padding: 0;
 }
 .burger-li{
     font-size: 20px;
