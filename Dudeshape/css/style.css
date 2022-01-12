@@ -328,6 +328,11 @@ input{
     padding: 12px 25px;
     border: 1px solid rgba(143, 138, 138, 0.87);
 }
+.first-row__price {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .prise{
     color: #222222;
     font-size: 30px;
@@ -509,5 +514,14 @@ input{
     }
     .footer-col__text{
         font-size: 14px;
+    }
+}
+@media (max-width:600px) {
+    .footer{
+        padding: 30px;
+    }
+     .footer__title{
+        font-size: 28px;
+        text-align: center;
     }
 }
