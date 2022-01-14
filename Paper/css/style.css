@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-
+html{
+    overflow-x: hidden;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -8,6 +10,361 @@ body{
 }
 .body__js{
     overflow-y: scroll;
+}
+
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    transition: .8s;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+.cssload-container * {
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+.cssload-container ul li{
+	list-style: none;
+}
+
+.cssload-container {
+	margin: 58px auto 0 auto;
+}
+
+.cssload-flex-container {
+	display: flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+	flex-direction: row;
+		-o-flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+	flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+	justify-content: space-around;
+}
+.cssload-flex-container li {
+	padding: 29px;
+	height: 288px;
+	width: 288px;
+	margin: 86px 58px;
+	position: relative;
+	text-align: center;
+}
+
+.cssload-loading {
+	display: inline-block;
+	width: 216px;
+	height: 14px;
+	background: rgb(255,255,255);
+	border-radius: 288px;
+	transform-origin: center center;
+		-o-transform-origin: center center;
+		-ms-transform-origin: center center;
+		-webkit-transform-origin: center center;
+		-moz-transform-origin: center center;
+	animation: cssload-loading 4.6s ease infinite;
+		-o-animation: cssload-loading 4.6s ease infinite;
+		-ms-animation: cssload-loading 4.6s ease infinite;
+		-webkit-animation: cssload-loading 4.6s ease infinite;
+		-moz-animation: cssload-loading 4.6s ease infinite;
+	margin-top: 101px;
+}
+
+
+
+
+@keyframes cssload-loading {
+	0% {
+		transform: rotate(-20deg);
+		height: 14px;
+		width: 216px;
+	}
+	5% {
+		height: 14px;
+		width: 216px;
+	}
+	30% {
+		transform: rotate(380deg);
+		height: 14px;
+		width: 216px;
+	}
+	40% {
+		transform: rotate(360deg);
+		height: 14px;
+		width: 216px;
+	}
+	55% {
+		transform: rotate(0deg);
+		height: 14px;
+		width: 14px;
+	}
+	65% {
+		transform: rotate(0deg);
+		height: 14px;
+		width: 244px;
+	}
+	68% {
+		transform: rotate(0deg);
+		height: 14px;
+	}
+	75% {
+		transform: rotate(0deg);
+		height: 14px;
+		width: 3px;
+	}
+	78% {
+		height: 14px;
+		width: 14px;
+	}
+	90% {
+		height: 14px;
+		width: 216px;
+		transform: rotate(0deg);
+	}
+	99%, 100% {
+		height: 14px;
+		width: 216px;
+		transform: rotate(-20deg);
+	}
+}
+
+@-o-keyframes cssload-loading {
+	0% {
+		-o-transform: rotate(-20deg);
+		height: 14px;
+		width: 216px;
+	}
+	5% {
+		height: 14px;
+		width: 216px;
+	}
+	30% {
+		-o-transform: rotate(380deg);
+		height: 14px;
+		width: 216px;
+	}
+	40% {
+		-o-transform: rotate(360deg);
+		height: 14px;
+		width: 216px;
+	}
+	55% {
+		-o-transform: rotate(0deg);
+		height: 14px;
+		width: 14px;
+	}
+	65% {
+		-o-transform: rotate(0deg);
+		height: 14px;
+		width: 244px;
+	}
+	68% {
+		-o-transform: rotate(0deg);
+		height: 14px;
+	}
+	75% {
+		-o-transform: rotate(0deg);
+		height: 14px;
+		width: 3px;
+	}
+	78% {
+		height: 14px;
+		width: 14px;
+	}
+	90% {
+		height: 14px;
+		width: 216px;
+		-o-transform: rotate(0deg);
+	}
+	99%, 100% {
+		height: 14px;
+		width: 216px;
+		-o-transform: rotate(-20deg);
+	}
+}
+
+@-ms-keyframes cssload-loading {
+	0% {
+		-ms-transform: rotate(-20deg);
+		height: 14px;
+		width: 216px;
+	}
+	5% {
+		height: 14px;
+		width: 216px;
+	}
+	30% {
+		-ms-transform: rotate(380deg);
+		height: 14px;
+		width: 216px;
+	}
+	40% {
+		-ms-transform: rotate(360deg);
+		height: 14px;
+		width: 216px;
+	}
+	55% {
+		-ms-transform: rotate(0deg);
+		height: 14px;
+		width: 14px;
+	}
+	65% {
+		-ms-transform: rotate(0deg);
+		height: 14px;
+		width: 244px;
+	}
+	68% {
+		-ms-transform: rotate(0deg);
+		height: 14px;
+	}
+	75% {
+		-ms-transform: rotate(0deg);
+		height: 14px;
+		width: 3px;
+	}
+	78% {
+		height: 14px;
+		width: 14px;
+	}
+	90% {
+		height: 14px;
+		width: 216px;
+		-ms-transform: rotate(0deg);
+	}
+	99%, 100% {
+		height: 14px;
+		width: 216px;
+		-ms-transform: rotate(-20deg);
+	}
+}
+
+@-webkit-keyframes cssload-loading {
+	0% {
+		-webkit-transform: rotate(-20deg);
+		height: 14px;
+		width: 216px;
+	}
+	5% {
+		height: 14px;
+		width: 216px;
+	}
+	30% {
+		-webkit-transform: rotate(380deg);
+		height: 14px;
+		width: 216px;
+	}
+	40% {
+		-webkit-transform: rotate(360deg);
+		height: 14px;
+		width: 216px;
+	}
+	55% {
+		-webkit-transform: rotate(0deg);
+		height: 14px;
+		width: 14px;
+	}
+	65% {
+		-webkit-transform: rotate(0deg);
+		height: 14px;
+		width: 244px;
+	}
+	68% {
+		-webkit-transform: rotate(0deg);
+		height: 14px;
+	}
+	75% {
+		-webkit-transform: rotate(0deg);
+		height: 14px;
+		width: 3px;
+	}
+	78% {
+		height: 14px;
+		width: 14px;
+	}
+	90% {
+		height: 14px;
+		width: 216px;
+		-webkit-transform: rotate(0deg);
+	}
+	99%, 100% {
+		height: 14px;
+		width: 216px;
+		-webkit-transform: rotate(-20deg);
+	}
+}
+
+@-moz-keyframes cssload-loading {
+	0% {
+		-moz-transform: rotate(-20deg);
+		height: 14px;
+		width: 216px;
+	}
+	5% {
+		height: 14px;
+		width: 216px;
+	}
+	30% {
+		-moz-transform: rotate(380deg);
+		height: 14px;
+		width: 216px;
+	}
+	40% {
+		-moz-transform: rotate(360deg);
+		height: 14px;
+		width: 216px;
+	}
+	55% {
+		-moz-transform: rotate(0deg);
+		height: 14px;
+		width: 14px;
+	}
+	65% {
+		-moz-transform: rotate(0deg);
+		height: 14px;
+		width: 244px;
+	}
+	68% {
+		-moz-transform: rotate(0deg);
+		height: 14px;
+	}
+	75% {
+		-moz-transform: rotate(0deg);
+		height: 14px;
+		width: 3px;
+	}
+	78% {
+		height: 14px;
+		width: 14px;
+	}
+	90% {
+		height: 14px;
+		width: 216px;
+		-moz-transform: rotate(0deg);
+	}
+	99%, 100% {
+		height: 14px;
+		width: 216px;
+		-moz-transform: rotate(-20deg);
+	}
 }
 
 .menu{
