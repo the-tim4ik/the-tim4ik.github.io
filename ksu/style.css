@@ -108,9 +108,17 @@ body{
 }
 @media (max-width:400px) {
     .time__hour{
-        font-size: 40px;
+        font-size: 45px;
     }
     .info{
-        font-size: 12px;
+        font-size: 15px;
+    }
+}
+@media (max-width:350px) {
+    .time__hour{
+        font-size: 39px;
+    }
+    .info{
+        font-size: 11.5px;
     }
 }
