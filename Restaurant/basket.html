@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <script src="https://kit.fontawesome.com/f73e65f514.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <div class="menu__burger">
+            <div class="menu__logo">
+                <img src="img/logo/logo.png" alt="">
+            </div>
+            <div class="menu__close"></div>
+            <div class="menu__hide">
+                <div class="menu__center">
+                    <div style="margin-top: 20px;" class="menu__body">
+                        <a href="basket.html">
+                            <div class="menu__cart">
+                                <img src="img/icon/cart.png" alt="">
+                            </div>
+                        </a>
+                        <div class="menu-row">
+                            <div class="menu-col" style="margin-left: 20px;">
+                                <div class="flex">
+                                    <div class="menu-img">
+                                        <img src="img/icon/phone.png" alt="">
+                                    </div>
+                                    <label class="menu-num">+999-888-76-54</label>
+                                </div>
+                                <p class="menu-text">Свяжитесь с нами для <br>
+                                    бронирования</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-burger__ul">
+                        <a href="index.html">
+                            <div class="menu__li burger-li">
+                                ГЛАВНАЯ
+                            </div>
+                        </a>
+                        <a href="index.html#menu">
+                            <div class="menu__li burger-li">
+                                МЕНЮ
+                            </div>
+                        </a>
+                        <a href="index.html#history">
+                            <div class="menu__li burger-li">
+                                О НАС
+                            </div>
+                        </a>
+                        <div class="menu__li booking__popup burger-li">
+                            БРОНЬ
+                        </div>
+                    </div>
+
+                    <div class="menu-col">
+                        <div class="menu-btn booking__popup burger-btn">ЗАКАЗ СТОЛИКА</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__btn">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="menu__row">
+            <div class="menu__col">
+                <div class="menu__logo">
+                    <img src="img/logo/logo.png" alt="">
+                </div>
+            </div>
+            <div style="display: flex; align-items: center;" class="menu__col">
+                <div class="menu__ul">
+                    <a href="index.html">
+                        <div class="menu__li">ГЛАВНАЯ</div>
+                    </a>
+                    <a href="index.html#menu">
+                        <div class="menu__li">МЕНЮ</div>
+                    </a>
+                    <a href="index.html#history">
+                        <div class="menu__li">О НАС</div>
+                    </a>
+                    <div class="menu__li booking__popup">БРОНЬ</div>
+                </div>
+                <div class="menu__body">
+                    <a href="basket.html">
+                        <div class="menu__cart">
+                            <img src="img/icon/cart.png" alt="">
+                        </div>
+                    </a>
+                    <div class="menu-row">
+                        <div class="menu-col" style="margin-left: 20px;">
+                            <div class="flex">
+                                <div class="menu-img">
+                                    <img src="img/icon/phone.png" alt="">
+                                </div>
+                                <label class="menu-num">+999-888-76-54</label>
+                            </div>
+                            <p class="menu-text">Свяжитесь с нами для <br>
+                                бронирования</p>
+                        </div>
+                        <div class="menu-col">
+                            <div class="menu-btn booking__popup">ЗАКАЗ СТОЛИКА</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup__area"></div>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close fa fa-times"></div>
+                <div class="popup__title">
+                    ЗАКАЗ СТОЛИКА
+                </div>
+                <div class="popup__text">
+                    <div class="popup__txt">Хотите заказать столик?</div>
+                    <div class="popup__inp">
+                        <input class="popup__input" type="text" maxlength="20" required value
+                            placeholder="Введите свой номер телефона...">
+                        <input type="button" class="popup__btn" value="Отправить!">
+                        <br>
+                        <div class="popup__NoError">Введите номер телефона!</div>
+                    </div>
+                    <div class="popup__txt">Мы перезвоним вам в ближайшее время!</div>
+                    <hr>
+                    <div class="popup__txt">или</div>
+                    <div style="justify-content: center;" class="flex">
+                        <div class="fa fa-phone"></div>
+                        <label class="menu-num">+999-888-76-54</label>
+                        <label class="fa fa-clone"></label><br>
+                    </div>
+                    <div class="popup__txt">Позвоните нам!</div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="popup__div">
+            <div id="number" class="popup__absolute">Номер отправлен, ожидайте звонка!</div>
+            <div id="copy" class="popup__absolute">Скопировано в буфер обмена!</div>
+        </div>
+    </div>
+
+    <div class="basket">
+        <div class="basket__title">
+            Ваша <label class="basket__color">Корзина</label>
+        </div>
+        <hr>
+        <div class="carte__row basket__row">
+            <div class="carte__col basket__col">
+                <div class="carte__img">
+                    <img src="img/foto/hamburger.png" alt="">
+                    <div class="carte__circle">
+                        <img src="img/foto/Ellipse.png" alt="">
+                        <div class="carte__prise">420</div>
+                    </div>
+                </div>
+                <div class="carte__name">Гамбургер макси</div>
+                <div class="carte__info">Максимально толстый <br> слой мяса
+                </div>
+            </div>
+            <div class="basket__amount">
+                <div class="basket__num">Кол-во: <label class="basket__color">2</label></div>
+                <div class="basket__plus">+</div>
+                <div class="basket__minus">-</div>
+            </div>
+        </div>
+        <hr>
+        <div class="basket__total">
+            <div class="basket__num">
+                Итого: <label style="font-family: 'Tinos', serif;" class="basket__color">840 ₽</label>
+            </div>
+            <div class="basket__btn">
+                <div class="basket__order">
+                    ЗАКАЗАТЬ
+                </div>
+                <div class="basket__cart">
+                    ДОБАВИТЬ КАРТУ
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scriptBasket.js"></script>
+</body>
+
+</html>

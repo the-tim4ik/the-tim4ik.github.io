@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <script src="https://kit.fontawesome.com/f73e65f514.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="swup" class="transition-fade">
+
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="cssload-loader"></div>
+        </div>
+    </div>
+
+    <div class="menu">
+
+        <div class="menu__burger">
+            <div class="menu__logo">
+                <img src="img/logo/logo.png" alt="">
+            </div>
+            <div class="menu__close"></div>
+            <div class="menu__hide">
+                <div class="menu__center">
+                    <div style="margin-top: 20px;" class="menu__body">
+                        <a href="basket.html">
+                            <div class="menu__cart">
+                                <img src="img/icon/cart.png" alt="">
+                            </div>
+                        </a>
+                        <div class="menu-row">
+                            <div class="menu-col" style="margin-left: 20px;">
+                                <div class="flex">
+                                    <div class="menu-img">
+                                        <img src="img/icon/phone.png" alt="">
+                                    </div>
+                                    <label class="menu-num">+999-888-76-54</label>
+                                </div>
+                                <p class="menu-text">Свяжитесь с нами для <br>
+                                    бронирования</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-burger__ul">
+                        <a href="index.html">
+                            <div class="menu__li burger-li">
+                                ГЛАВНАЯ
+                            </div>
+                        </a>
+                        <a href="#menu">
+                            <div class="menu__li burger-li">
+                                МЕНЮ
+                            </div>
+                        </a>
+                        <a href="#history">
+                            <div class="menu__li burger-li">
+                                О НАС
+                            </div>
+                        </a>
+                        <div class="menu__li booking__popup burger-li">
+                            БРОНЬ
+                        </div>
+                    </div>
+
+                    <div class="menu-col">
+                        <div class="menu-btn booking__popup burger-btn">ЗАКАЗ СТОЛИКА</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__btn">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="menu__row">
+            <div class="menu__col">
+                <div class="menu__logo">
+                    <img src="img/logo/logo.png" alt="">
+                </div>
+            </div>
+            <div style="display: flex; align-items: center;" class="menu__col">
+                <div class="menu__ul">
+                    <a href="index.html">
+                        <div class="menu__li">ГЛАВНАЯ</div>
+                    </a>
+                    <a href="#menu">
+                        <div class="menu__li">МЕНЮ</div>
+                    </a>
+                    <a href="#history">
+                        <div class="menu__li">О НАС</div>
+                    </a>
+                    <div class="menu__li booking__popup">БРОНЬ</div>
+                </div>
+                <div class="menu__body">
+                    <a href="basket.html">
+                        <div class="menu__cart">
+                            <img src="img/icon/cart.png" alt="">
+                        </div>
+                    </a>
+                    <div class="menu-row">
+                        <div class="menu-col" style="margin-left: 20px;">
+                            <div class="flex">
+                                <div class="menu-img">
+                                    <img src="img/icon/phone.png" alt="">
+                                </div>
+                                <label class="menu-num">+999-888-76-54</label>
+                            </div>
+                            <p class="menu-text">Свяжитесь с нами для <br>
+                                бронирования</p>
+                        </div>
+                        <div class="menu-col">
+                            <div class="menu-btn booking__popup">ЗАКАЗ СТОЛИКА</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup__area"></div>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close fa fa-times"></div>
+                <div class="popup__title">
+                    ЗАКАЗ СТОЛИКА
+                </div>
+                <div class="popup__text">
+                    <div class="popup__txt">Хотите заказать столик?</div>
+                    <div class="popup__inp">
+                        <input class="popup__input" type="text" maxlength="20" required value
+                            placeholder="Введите свой номер телефона...">
+                        <input type="button" class="popup__btn" value="Отправить!">
+                        <br>
+                        <div class="popup__NoError">Введите номер телефона!</div>
+                    </div>
+                    <div class="popup__txt">Мы перезвоним вам в ближайшее время!</div>
+                    <hr>
+                    <div class="popup__txt">или</div>
+                    <div style="justify-content: center;" class="flex">
+                        <div class="fa fa-phone"></div>
+                        <label class="menu-num">+999-888-76-54</label>
+                        <label class="fa fa-clone"></label><br>
+                    </div>
+                    <div class="popup__txt">Позвоните нам!</div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="popup__div">
+            <div id="number" class="popup__absolute">Номер отправлен, ожидайте звонка!</div>
+            <div id="copy" class="popup__absolute">Скопировано в буфер обмена!</div>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <div class="welcome__content">
+            <div class="welcome__text">
+                Добро пожаловать в <br>
+                <label class="font">Наш ресторан</label>
+            </div>
+            <div class="welcome__txt">
+                <div class="welcome__line"></div>
+                ДОМ ЛУЧШЕЙ ЕДЫ
+                <div class="welcome__line"></div>
+            </div>
+            <a href="#menu">
+                <div class="welcome__btn">
+                    VIEW MENU
+                </div>
+            </a>
+        </div>
+
+        <div class="welcome__absolute">
+            <div class="welcome__row">
+                <div class="welcome__col">
+                    <div class="welcome__img">
+                        <img src="img/icon/Mask.png" alt="">
+                    </div>
+                    <div class="welcome__title">Магическая <label class="welcome__color"></label> Атмосфера</div>
+                    <div class="welcome__info">В нашем заведении царит <br> магическая атмосфера <br>
+                        наполненная вкусными ароматами</div>
+                </div>
+                <div class="welcome__col">
+                    <div class="welcome__img">
+                        <img src="img/icon/Mask.png" alt="">
+                    </div>
+                    <div class="welcome__title">Лучшее качество <label class="welcome__color"></label> Еды</div>
+                    <div class="welcome__info">Качество нашей <br>
+                        Еды - отменное!
+                    </div>
+                </div>
+                <div class="welcome__col">
+                    <div class="welcome__img">
+                        <img src="img/icon/Mask.png" alt="">
+                    </div>
+                    <div class="welcome__title">Недорогая <label class="welcome__color"></label> Еда</div>
+                    <div id="history" class="welcome__info">Стоимость нашей Еды <br>
+                        зависит только от ее <br>
+                        количества. Качество <br>
+                        всегда на высоте!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="history">
+        <div class="history__row anim__hide-puls">
+            <div class="history__col">
+                <div class="history__title">Наша <label class="history__color">История</label></div>
+                <div class="history__text">
+                    Как и у любого другого самобытного места, у нас есть <br> своя, особая история. Идея ресторана
+                    пришла <br>
+                    основателям неожиданно. Во время прогулки по лесу <br> создатель нашего ресторана застрял в сотнях
+                    <br>
+                    километров от ближайшего населенного пункта. Вдали <br> от цивилизации и связи им пришлось навремя
+                    <br>
+                    обустровать себе нехитрый быт, добывать и готовить себе еду.
+                </div>
+                <div class="history__info">
+                    <div class="info__row">
+                        <div class="info__col">
+                            <div class="info__num">93</div>
+                            <div class="info__text">Напитки</div>
+                        </div>
+                        <div class="info__col">
+                            <div class="info__num">206</div>
+                            <div class="info__text">Еда</div>
+                        </div>
+                        <div class="info__col">
+                            <div class="info__num">71</div>
+                            <div class="info__text">Закуски</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="history__col none">
+                <div class="history__img">
+                    <img src="img/foto/images.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ad">
+        <div class="ad__content">
+            <div class="ad__col">
+                <div class="ad__title">
+                    Отпразднуйте в одном из <br>
+                    самых лучших ресторанов.
+                </div>
+                <div class="ad__text">Только в этом месяце бизнес-ланч от 250 ₽</div>
+            </div>
+            <div class="ad__col">
+                <div class="ad__btn booking__popup">ЗАКАЗ СТОЛИКА</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dishes">
+        <div class="dishes__title">Наши <label class="dishes__color">Блюда</label></div>
+        <div class="dishes__row">
+            <div class="dishes__col">
+                <div class="dishes__img">
+                    <img src="img/our dishes/pizza.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="dishes__col">
+                <div class="dishes__burger anim__hide-left">
+                    <div class="dishes__img">
+                        <img src="img/our dishes/hamburger.png" alt="">
+                    </div>
+                    <div class="dishes__info">
+                        <div class="dishes__name">Гамбургер мини</div>
+                        <div class="dishes__line"></div>
+                        <div class="dishes__price">220 ₽</div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;" class="dishes__burger anim__hide-left">
+                    <div class="dishes__img">
+                        <img src="img/our dishes/hamburger.png" alt="">
+                    </div>
+                    <div class="dishes__info">
+                        <div class="dishes__name">Гамбургер мини</div>
+                        <div class="dishes__line"></div>
+                        <div class="dishes__price">220 ₽</div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;" class="dishes__burger anim__hide-left">
+                    <div class="dishes__img">
+                        <img src="img/our dishes/hamburger.png" alt="">
+                    </div>
+                    <div class="dishes__info">
+                        <div class="dishes__name">Гамбургер мини</div>
+                        <div class="dishes__line"></div>
+                        <div class="dishes__price">220 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="carte">
+        <div class="carte__title">Наше меню</div>
+        <div class="carte__row">
+            <div style="position: relative;" class="carte__col anim__hide-left">
+                <div class="carte__recommended">RECOMMENDED</div>
+                <div class="carte__img">
+                    <img src="img/foto/hamburger.png" alt="">
+                    <div class="carte__circle">
+                        <img src="img/foto/Ellipse.png" alt="">
+                        <div class="carte__prise">420</div>
+                    </div>
+                </div>
+                <div class="carte__name">Гамбургер макси</div>
+                <div class="carte__info">Максимально толстый <br> слой мяса
+                </div>
+                <div class="carte__btn">ЗАКАЗАТЬ</div>
+            </div>
+            <div class="carte__col anim__hide-left">
+                <div class="carte__img">
+                    <img src="img/foto/hamburger.png" alt="">
+                    <div class="carte__circle">
+                        <img src="img/foto/Ellipse.png" alt="">
+                        <div class="carte__prise">420</div>
+                    </div>
+                </div>
+                <div class="carte__name">Гамбургер макси</div>
+                <div class="carte__info">Максимально толстый <br> слой мяса
+                </div>
+                <div class="carte__btn">ЗАКАЗАТЬ</div>
+            </div>
+            <div class="carte__col anim__hide-left">
+                <div class="carte__img">
+                    <img src="img/foto/hamburger.png" alt="">
+                    <div class="carte__circle">
+                        <img src="img/foto/Ellipse.png" alt="">
+                        <div class="carte__prise">420</div>
+                    </div>
+                </div>
+                <div class="carte__name">Гамбургер макси</div>
+                <div class="carte__info">Максимально толстый <br> слой мяса
+                </div>
+                <div class="carte__btn">ЗАКАЗАТЬ</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <div class="reviews__slider block fade">
+            <div class="reviews__text">
+                Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной <br> Армении!!!
+                Отдельное
+                спасибо за комплепент в виде фруктовой тарелки. Будем <br> рекомендовать этот ресторан своим друзьям и
+                родственникам также за рубежом, <br> путешествующих в Санкт-Петербург!!!
+            </div>
+            <div class="reviews__img">
+                <img src="img/foto/people.png" alt="">
+            </div>
+            <div class="reviews__visitor">
+                Посетитель
+            </div>
+            <div class="reviews__name">
+                Николай
+            </div>
+            <div class="reviews__row">
+                <div class="reviews__col active">
+
+                </div>
+                <div class="reviews__col">
+
+                </div>
+                <div class="reviews__col">
+
+                </div>
+            </div>
+        </div>
+        <div class="reviews__slider fade">
+            <div class="reviews__text">
+                Lorem ipsum dolor sit amet consectetur. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Assumenda labore maxime tempore. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Lorem ipsum dolor sit.
+            </div>
+            <div class="reviews__img">
+                <img src="img/foto/people.png" alt="">
+            </div>
+            <div class="reviews__visitor">
+                Посетитель
+            </div>
+            <div class="reviews__name">
+                Елена
+            </div>
+            <div class="reviews__row">
+                <div class="reviews__col">
+
+                </div>
+                <div class="reviews__col active">
+
+                </div>
+                <div class="reviews__col">
+
+                </div>
+            </div>
+        </div>
+        <div class="reviews__slider fade">
+            <div class="reviews__text">
+                Lorem ipsum dolor sit amet consectetur. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Assumenda labore maxime tempore. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Lorem ipsum dolor sit.
+            </div>
+            <div class="reviews__img">
+                <img src="img/foto/people.png" alt="">
+            </div>
+            <div class="reviews__visitor">
+                Посетитель
+            </div>
+            <div class="reviews__name">
+                Оксана
+            </div>
+            <div class="reviews__row">
+                <div class="reviews__col">
+
+                </div>
+                <div class="reviews__col">
+
+                </div>
+                <div class="reviews__col active">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery__title">Галерея <label class="gallery__color">Блюд</label></div>
+        <div class="gallery__row">
+            <div class="gallery__block left"></div>
+            <div class="gallery__block right"></div>
+            <div class="gallery__col anim__hide-left">
+                <div class="gallery__img">
+                    <img src="img/gallery/1.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="gallery__col anim__hide-left">
+                <div class="gallery__img">
+                    <img src="img/gallery/2.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="gallery__col anim__hide-left">
+                <div class="gallery__img">
+                    <img src="img/gallery/3.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: -20px;" class="gallery__row">
+            <div class="gallery__col anim__hide-left">
+                <div class="gallery__img">
+                    <img src="img/gallery/2.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="gallery__col anim__hide-left">
+                <div class="gallery__img">
+                    <img src="img/gallery/3.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="gallery__col anim__hide-left">
+                <div class="gallery__img">
+                    <img src="img/gallery/1.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cook">
+        <div class="cook__title">Наши <label class="cook__color">Повара</label></div>
+        <div class="cook__row">
+            <div class="cook__col">
+                <img src="img/cook/1.png" alt="" width="100%">
+            </div>
+            <div class="cook__col">
+                <img src="img/cook/2.png" alt="" width="100%">
+            </div>
+            <div class="cook__col">
+                <img src="img/cook/3.png" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="last">
+        <div class="last__img">
+            <img src="img/bg/last.png" alt="" width="100%">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
