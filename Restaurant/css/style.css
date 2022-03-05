@@ -1057,6 +1057,7 @@ a{
 .basket__plus {
 	text-align: center;
 	width: 40px;
+	height: 40px;
 	cursor: pointer;
 	background: #fff;
 	border-radius: 50%;
@@ -1066,6 +1067,7 @@ a{
 .basket__minus {
 	text-align: center;
 	width: 40px;
+	height: 40px;
 	cursor: pointer;
 	background: #fff;
 	border-radius: 50%;
@@ -1080,11 +1082,12 @@ a{
 }
 .basket__btn {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 .basket__order {
 	cursor: pointer;
-	margin: 0 20px;
+	margin: 15px 20px;
 	font-size: 20px;
 	padding: 10px 30px;
 	background: #FF7400;
@@ -1093,13 +1096,43 @@ a{
 }
 .basket__cart {
 	cursor: pointer;
-	margin: 0 10px;
+	margin: 15px 10px;
 	font-size: 20px;
 	padding: 10px 30px;
 	border: 2px solid #00000040;
 	box-shadow: 5px 5px 10px #00000040;
 }
-
+@media (max-width:750px) {
+	.basket__total{
+		flex-direction: column;
+		margin-left: 0;
+		justify-content: center;
+		align-items: center;
+	}
+	.basket__num{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width:700px) {
+	.basket__row{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width:500px) {
+	.basket__btn{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width:400px) {
+	.basket__col{
+		width: 200px;
+	}
+	.basket__circle{
+		right: -30px;
+	}
+}
 
 
 .anim__hide-left{
