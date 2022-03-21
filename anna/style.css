@@ -28,6 +28,7 @@ body{
     font-size: 40px;
     text-shadow: 0 0 10px #000;
     color: #fff;
+    padding: 0 10px;
 }
 .info{
     display: flex;
