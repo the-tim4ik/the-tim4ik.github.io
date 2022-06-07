@@ -864,3 +864,32 @@ body{
     margin-top: 30px;
     font-size: 20px;
 }
+.video__div{
+    width: 575px;
+}
+@media (max-width:650px) {
+    .video__div{
+        width: 90%;
+    }
+    .video__center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video__text{
+        margin: 20px 10px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+@media (max-width:470px) {
+    .video__text{
+        margin: 20px 5px 0;
+        font-size: 14px;
+    }
+}
+@media (max-width:400px) {
+    .video__text{
+        font-size: 12px;
+    }
+}
