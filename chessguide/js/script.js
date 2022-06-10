@@ -27,3 +27,34 @@ divClose.onclick = function () {
     document.body.classList.add('body__js');
     divClose.classList.remove('menu__close-on');
 }
+
+let leasonDiv = document.querySelectorAll('.leason__col');
+let leasonNo = document.querySelectorAll('#leason__no');
+let leasonTrue = document.querySelector('#leason__true');
+let wellNo = document.getElementById('well__no');
+let wellDiv = document.querySelector('.well__app');
+for (let i = 0; i < leasonDiv.length; i++) {
+    leasonDiv[i].onclick = function () {
+        for (let i = 0; i < leasonDiv.length; i++){
+            if (!leasonDiv[i].classList.contains('.leason__active')){
+                leasonDiv[i].classList.remove('leason__active');
+                
+            }
+        }
+        leasonDiv[i].classList.add('leason__active');
+    }
+    for (let i = 0; i < leasonNo.length; i++) {
+        leasonNo[i].onclick = function () {
+            wellNo.classList.add('well__none');
+            wellDiv.classList.add('well__app-block');
+            // wellDiv.style.display = 'none';
+        }
+    }
+    // if (leasonDiv.classList.contains('leason__active')) {
+    //     leasonDiv.classList.remove('leason__active');
+    // }
+}
+leasonTrue.onclick = function(){
+    wellNo.classList.remove('well__none');
+    wellDiv.classList.remove('well__app-block');
+}
