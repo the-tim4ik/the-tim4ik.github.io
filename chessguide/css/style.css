@@ -1539,6 +1539,7 @@ a{
 .registrations__input {
     font-size: 18px;
     border: none;
+    background: none;
     outline: none;
     border: none;
     border-bottom: 1.5px solid #1D3441;
