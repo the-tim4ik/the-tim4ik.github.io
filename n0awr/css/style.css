@@ -1,236 +1,117 @@
-@font-face {font-family: "Druk Wide Cy Web Medium Regular";
-    src: url("../fonts/Druk-Wide/8db9d40071db7a82e8941dd9a1adeaba.eot"); /* IE9*/
-    src: url("../fonts/Druk-Wide/8db9d40071db7a82e8941dd9a1adeaba.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Druk-Wide/8db9d40071db7a82e8941dd9a1adeaba.woff2") format("woff2"), /* chrome、firefox */
-    url("../fonts/Druk-Wide/8db9d40071db7a82e8941dd9a1adeaba.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/Druk-Wide/8db9d40071db7a82e8941dd9a1adeaba.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("../fonts/Druk-Wide/8db9d40071db7a82e8941dd9a1adeaba.svg#Druk Wide Cy Web Medium Regular") format("svg"); /* iOS 4.1- */
-    font-style: normal;
-}
-
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy/Gilroy-SemiBold.eot');
-    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-        url('../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
-        url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Regular.eot');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('../fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
-        url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy/Gilroy-Medium.eot');
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('../fonts/Gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
-        url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
-    font-weight: 500;
+    font-family: 'TT Firs Neue';
+    src: url('../fonts/TT/TTFirsNeue-Medium.eot');
+    src: local('TT Firs Neue Medium'), local('TTFirsNeue-Medium'),
+        url('../fonts/TT/TTFirsNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TT/TTFirsNeue-Medium.woff2') format('woff2'),
+        url('../fonts/TT/TTFirsNeue-Medium.woff') format('woff'),
+        url('../fonts/TT/TTFirsNeue-Medium.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
 }
 
 body{
+    background: #F2F3F8;
+    font-family: 'TT Firs Neue';
     margin: 0;
-    background-color: #1F2224;
-    color: #fff;
 }
-
 .content__image{
     width: 100%;
+    display: flex;
 }
-
-.slides {
-    max-width: 100%;
-    height: 50%;
-    position: relative;
-    margin: 0 auto;
-}
-
-.mySlides img{
-    width: 100%;
-}
-
-.mySlides, .mySlides2, .mySlides3 {
+.d-1200{
     display: none;
 }
-
-.block {
+.d-960{
+    display: none;
+}
+.d-640{
+    display: none;
+}
+.btn-flex {
     display: flex;
     justify-content: center;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    margin: 5px 0;
 }
-
-.prev, .next, .next2, .prev2, .next3, .prev3 {
-    /* cursor: pointer; */
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    height: 100%;
-    width: 25%;
-    transition: .8s ease;
+a{
+    text-decoration: none;
 }
-
-.next, .next2, .next3 {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    justify-content: start;
-}
-
-.slides__img{
-    width: 100%;
-}
-
-.text {
+.btn {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 15%;
-    width: 50%;
+    background: #1E67C8;
+    border-radius: 10px;
     text-align: center;
+    padding: 22px 50px;
+    margin: 0 10px;
 }
-@media (max-width:600px) {
-    .text{
+.btn-1920 {
+    font-size: 26px;
+}
+.btn-1200 {
+    font-size: 25px;
+}
+.btn-960{
+    font-size: 23px;
+}
+.btn-640{
+    font-size: 22px;
+}
+@media (max-width:1200px) {
+    .d-1920{
+        display: none;
+    }
+    .d-1200{
+        display: block;
+    }
+    .d-960{
+        display: none;
+    }
+    .d-640{
         display: none;
     }
 }
-@media (min-width:600px) {
-    .text{
-        padding: 5px;
-        bottom: 7%;
+@media (max-width:960px) {
+    .d-1920{
+        display: none;
+    }
+    .d-1200{
+        display: none;
+    }
+    .d-960{
+        display: block;
+    }
+    .d-640{
+        display: none;
     }
 }
-@media (min-width:800px) {
-    .text{
-        padding: 8px 12px;
-        bottom: 15%;
+@media (max-width:640px) {
+    .d-1920{
+        display: none;
+    }
+    .d-1200{
+        display: none;
+    }
+    .d-960{
+        display: none;
+    }
+    .d-640{
+        display: block;
     }
 }
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .3;
+@media (max-width:530px) {
+    .btn-640{
+        font-size: 18px;
     }
-    to {
-        opacity: 1;
+    .btn {
+        padding: 16px 30px;
+        margin: 0 5px;
     }
 }
-
-.sn {
-    margin-top: -15px;
-    background: #1F2224;
+@media (max-width:400px) {
+    .btn-640{
+        font-size: 15px;
+    }
+    .btn {
+        padding: 16px 30px;
+    }
 }
-.sn__row {
-    display: flex;
-    justify-content: center;
-}
-.sn__col {
-    margin: 5px;
-}
-.sn__btn {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* .druk{
-    font-family: "Druk Wide Cy Web Medium Regular" !important;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.reg{
-    font-family: 'Gilroy';
-    font-weight: normal;
-    font-style: normal;
-}
-.med{
-    font-family: 'Gilroy';
-    font-weight: 500;
-    font-style: normal;
-}
-.sb{
-    font-family: 'Gilroy';
-    font-weight: 600;
-    font-style: normal;
-}
-.image__banner{
-    width: 100%;
-}
-
-.portfolio {
-    margin-top: -80px;
-    font-family: "Druk Wide Cy Web Medium Regular" !important;
-    text-align: center;
-}
-.text__1 {
-    font-size: 25px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.text__2 {
-    font-size: 38px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.gradient {
-   background: linear-gradient(140deg, #FFFBCF, #F26843, #B1252D, #240334); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.creo {
-}
-.creo__row {
-    display: flex;
-    justify-content: space-around;
-}
-.creo__col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.creo__left{
-    margin-left: 30px;
-    flex-basis: 40%;
-}
-.creo__right{
-    flex-basis: 60%;
-}
-.creo__title {
-    font-family: "Druk Wide Cy Web Medium Regular" !important;
-    font-size: 44px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.creo__text {
-    margin-top: 20px;
-    font-family: 'Gilroy';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 17px;
-}
-.text__sb {
-    font-weight: 600;
-    font-style: normal;
-}
-.image__creo {
-    width: 100%;
-} */
